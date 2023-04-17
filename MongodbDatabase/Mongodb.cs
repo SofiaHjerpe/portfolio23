@@ -48,5 +48,19 @@ namespace MongodbDatabase
             await GetDb().GetCollection<Project>("Projects")
                 .DeleteOneAsync(p => p.Id == _id);
         }
+
+        public async Task SaveContact(Contact contact)
+        {
+            await GetDb().GetCollection<Contact>("Contacts")
+                 .InsertOneAsync(contact);
         }
+
+        public async Task<List<Contact>> GetAllContacts()
+        {
+            var contacts = await GetDb().GetCollection<Contact>("Contacts")
+                .Find(c => true)
+                .ToListAsync();
+            return contacts;
+        }
+    }
     }

@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+    <link alt="stylesheet" src="~/css/StyleSheet.css" />
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="text-center">
+        @if (ViewBag.ContactSuccess)
+        {
+            <h6>Tack för din kontakt!</h6>
+        }
+
+
+
+        <h1 class="display-4" >Contact</h1>
+        <p><strong>Mail:</strong> Sofia.Hjerpe@yahoo.com</p>
+        <p><strong>Nummer:</strong> 0768882185</p>
+        <p> <strong>GitHub:</strong> SofiaHjerpe</p>
+        <p> <strong>Linkedin:</strong> Sofia Hjerpe</p>
+
+
+
+
+
+    </div>
+
+    <div style="margin-top: 20px" class="text-center">
+        <h4>Contact me</h4>
+        <form class="form" method="post" asp-action="PostContact">
+
+            <div class="form-input">
+                <label name="Name" class="control-label"></label>
+                <input name="Name" placeholder="Name" />
+
+            </div>
+            <div class="form-input">
+                <label name="Email" class="control-label"></label>
+                <input name="Email" placeholder="Email" />
+
+            </div>
+
+            <button>Send</button>
+        </form>
+
+
+    </div>
+</body>
