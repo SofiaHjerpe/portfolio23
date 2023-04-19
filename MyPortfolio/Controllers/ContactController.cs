@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MongodbDatabase;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using MyPortfolio.Models;
+
 
 namespace MyPortfolio.Controllers
 {

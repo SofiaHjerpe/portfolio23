@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MongodbDatabase;
+using MyPortfolio.Models;
 
 namespace Portfolio.Controllers
 {
