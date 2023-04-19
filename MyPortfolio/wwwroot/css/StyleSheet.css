@@ -90,18 +90,17 @@ a {
 }
 
     a:active {
-        color: rgba(219,66, 184, 0.2);
+        color: rgb(128 128 128);
         opacity: 0.5;
     }
 
     a:focus {
-        color: rgba(219,66, 184, 0.2);
-        opacity: 0.5;
-    }
+        color: rgba(0,0,0,0.5);
+     }
 
     a:hover {
-        color: rgba(66, 219, 101, 0.2);
-        opacity: 0.8;
+        color: rgb(128 128 128);
+
     }
 
 
