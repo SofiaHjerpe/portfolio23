@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using MongodbDatabase;
+using MyPortfolio;
+using MyPortfolio.Models;
 
 Console.WriteLine("Welcome to project admin!");
 Console.WriteLine("Create Project: ");
